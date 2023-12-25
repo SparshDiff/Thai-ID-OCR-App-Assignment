@@ -1,0 +1,106 @@
+/* static/style.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    padding: 14px;
+    width: calc(100% - 24px);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    padding: 14px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #217dbb;
+}
+
+#result,
+#historyResult {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: auto;
+    font-size: 14px;
+}
+
+#history {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#history button {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+#history button:hover {
+    background-color: #218838;
+}
+
+#historyResult {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-size: 14px;
+}

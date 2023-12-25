@@ -1,0 +1,38 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai ID OCR App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Thai ID OCR App</h1>
+    </header>
+    <main class="container">
+        <section class="ocr-section">
+            <h2>Process OCR</h2>
+            <form id="ocrForm" enctype="multipart/form-data">
+                <label for="image">Choose a Thai ID Card Image:</label>
+                <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg" required>
+                <button type="button" onclick="processOCR()">Process OCR</button>
+            </form>
+            <div id="result"></div>
+        </section>
+        <section class="history-section">
+            <h2>OCR History</h2>
+            <button type="button" onclick="getOCRData()">Get OCR Data</button>
+            <div id="historyResult"></div>
+        </section>
+    </main>
+    <script>
+        // JavaScript functions here
+    </script>
+</body>
+
+</html>
